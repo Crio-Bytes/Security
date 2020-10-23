@@ -1,7 +1,8 @@
-# Introduction
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+# Introduction
 
 **Computer security**, **cybersecurity** or **information technology security** (**IT security**) is the protection of [computer systems](https://en.wikipedia.org/wiki/Computer_system) and [networks](https://en.wikipedia.org/wiki/Computer_network) from the theft of or damage to their [hardware](https://en.wikipedia.org/wiki/Computer_hardware), [software](https://en.wikipedia.org/wiki/Software), or [electronic data](https://en.wikipedia.org/wiki/Data_(computing)), as well as from the [disruption](https://en.wikipedia.org/wiki/Denial-of-service_attack) or [misdirection](https://en.wikipedia.org/wiki/Botnet) of the services they provide.
 

@@ -126,6 +126,14 @@ Paste into verify sign at right, and verify.
 
 </details>
 
+## Understand how Signature works
+
+Signed JWTs are signed by cryptographic hash functions. Unline encryption that can be decrypted, a crypographic hash cannot be reversed(without sufficiently high time and compute resources beyond present day availability). JWTs can be signed using any of the crypographic functions available. The one we used here is HS256 that stands for HMAC using SHA-256. 
+Read more about them to get in-depth knowledge.
+
+![](./images/jwt-2.png)<br>
+Credits: JWT Handbook by Sebastián Peyrott
+
 ## Activity: Try Tampering JWT
 
 You are wondering that JWT by design is secure and cannot be tampered, isn't it? As with all tools, unless implemented properly, even JWT can have an insecure implementation.
@@ -197,16 +205,6 @@ To verify the JWT, pass the JWT as authorization header to `/verifyjwt`. <br>
 <img src ='./images/jwt-3.png'/>
 
 </details>
-
-## Understand how Signature works
-
-Signed JWTs are signed by cryptographic hash functions. Unline encryption that can be decrypted, a crypographic hash cannot be reversed(without sufficiently high time and compute resources beyond present day availability). JWTs can be signed using any of the crypographic functions available. The one we used here is HS256 that stands for HMAC using SHA-256. 
-Read more about them to get in-depth knowledge.
-
-![](./images/jwt-2.png)<br>
-Credits: JWT Handbook by Sebastián Peyrott
-
-
 
 ## Quiz: Recap of Learning
 

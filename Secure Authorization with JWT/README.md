@@ -1,6 +1,6 @@
 # Secure Authorization with JWT
 
-<img src='./images/hero.jpg'>
+<img src='./images/hero.jpg' width='100%'/>
 
 ## What is in store?
 
@@ -11,7 +11,7 @@ Who does not like a story while learning a technical concept? Let us try to get 
 JWTs are used primarily for authorization. Having prior knowledge of one or many of the following topics will give you a clearer context.
 - Any kind of authentication on a backend server
 - Use of protected APIs
-- Nodejs(only for Challenge Activities)
+- Node.js(only for Challenge Activities)
 
 ## Introduction: What, Where and Why?
 
@@ -144,6 +144,8 @@ Paste into verify sign at right, and verify.
 
 You are wondering that JWT by design is secure and cannot be tampered, isn't it? As with all tools, unless implemented properly, even JWT can have an insecure implementation.
 
+<img src='./images/hacker-stealing-representation.jpg' width='100%'/>
+
 <details>
 <summary>Can you think of a way to tamper? (click to expand)</summary>
 JWT by design does not require it to be signed. What if you take a JWT, strip off the signature part and modify the Header to say unsigned JWT. Once you do this, you can modify the JWT to your liking and the JWT in principle is valid. 
@@ -259,6 +261,7 @@ We believe that there can be no one-stop solution to learn it all. And, JWT is n
 - Access Token and Refresh Token
 - Session Token
 
-## References
+## References and Credits
 1. https://jwt.io/
 2. http://www.base64url.com/
+3. https://unsplash.com/

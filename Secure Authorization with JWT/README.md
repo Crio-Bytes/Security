@@ -11,7 +11,7 @@ Who does not like a story while learning a technical concept? Let us try to get 
 JWTs are used primarily for authorization. Having prior knowledge of one or many of the following topics will give you a clearer context.
 - Any kind of authentication on a backend server
 - Use of protected APIs
-- Node.js(only for Challenge Activities)
+- [Node.js](https://nodejs.org/)(only for Challenge Activities)
 
 ## Introduction: What, Where and Why?
 

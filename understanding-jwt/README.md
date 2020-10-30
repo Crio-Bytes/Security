@@ -154,7 +154,7 @@ Unsigned JWT will have the Header with
 
 Can you take the first JWT shown above from the Introduction section and create an unsigned JWT of the same with a modified message? 
 
-## Activity: Create JWT on server
+## Challenge Activity: Create JWT on server
 
 Process
 1. Authenticate to see if request parameters matches the username and password on server
@@ -179,7 +179,7 @@ To verify the JWT, let us check code at `/verifyjwt`. <br>
 - `jwt.verify()` by default uses HS256. Modify the code try different signing method
 - The example token is not a secure one. Use a package like `crypto` to generate a secure and random key
 
-## Activity: Get and use JWT
+## Challenge Activity: Get and use JWT
 
 Process
 1. Authenticate yourself with username password or equivalent depending on the service

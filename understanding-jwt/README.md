@@ -99,6 +99,13 @@ Paste into verify sign at right in place of your-256-bit-secret
 
 Once you paste the secret and then verify, you can see that JWT is verified. Hence, JWT can be used to securely communicate with a server without worrying about tampering.
 
+## Understand how Signature works
+
+Signed JWTs are signed by cryptographic hash functions. Unline encryption that can be decrypted, a crypographic hash cannot be reversed(without sufficiently high time and compute resources beyond present day availability). JWTs can be signed using any of the crypographic functions available. The one we used here is HS256 that stands for HMAC using SHA-256. 
+Read more about them to get in-depth knowledge.
+
+![](./images/jwt-2.png)<br>
+Credits: JWT Handbook by Sebastián Peyrott
 
 ## Activity: Encode JWT
 
@@ -125,14 +132,6 @@ We sneakily changed the secret to test if you are actually following along. We a
 Paste into verify sign at right, and verify.
 
 </details>
-
-## Understand how Signature works
-
-Signed JWTs are signed by cryptographic hash functions. Unline encryption that can be decrypted, a crypographic hash cannot be reversed(without sufficiently high time and compute resources beyond present day availability). JWTs can be signed using any of the crypographic functions available. The one we used here is HS256 that stands for HMAC using SHA-256. 
-Read more about them to get in-depth knowledge.
-
-![](./images/jwt-2.png)<br>
-Credits: JWT Handbook by Sebastián Peyrott
 
 ## Activity: Try Tampering JWT
 
@@ -232,7 +231,7 @@ False <br>
 Signed JWT are tampered-proof but the information in it is still readable
 </details>
 
-> What is the industry-accepted pronunciation of JWT? 
+> What is the widely used pronunciation of JWT? 
 
 - Jay - Double U - Tee
 - jot

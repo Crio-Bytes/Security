@@ -1,3 +1,4 @@
+# Secure Authorization with JWT
 ## What is in store?
 
 Who does not like a story while learning a technical concept? Let us try to get a grasp of what we would learn via a story. Imagine going to a bank to open an account. You submit all documents, get all verification done and then once the account is ready, you get a passbook. The next time you go to the bank for any purpose like cash-withdrawal or cheque deposition, you do not need to do a full document verification again. As long as you have the passbook to identify yourself, you are good to go. Now you might be wondering, how is this related to security? Ever thought how you sign-in to an app and you stay signed and you do not have to enter the password for every page you navigate to? One of the secure ways to do this is using JWT. Are you excited to learn? Follow along! 

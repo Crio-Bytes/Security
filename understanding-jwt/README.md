@@ -1,5 +1,12 @@
 ## What is in store?
+
 Who does not like a story while learning a technical concept? Let us try to get a grasp of what we would learn via a story. Imagine going to a bank to open an account. You submit all documents, get all verification done and then once the account is ready, you get a passbook. The next time you go to the bank for any purpose like cash-withdrawal or cheque deposition, you do not need to do a full document verification again. As long as you have the passbook to identify yourself, you are good to go. Now you might be wondering, how is this related to security? Ever thought how you sign-in to an app and you stay signed and you do not have to enter the password for every page you navigate to? One of the secure ways to do this is using JWT. Are you excited to learn? Follow along! 
+
+## Prerequisite
+
+JWTs are used primarily for authorization. Having prior knowledge of one or many of the following topics will give you a clearer context.
+- Any kind of authentication on a backend server
+- Use of protected APIs
 
 ## Introduction: What, Where and Why?
 
@@ -24,29 +31,22 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
 eyJzdWIiOiJDcmlvLmRvIGhlbHBzIHlvdSBsZWFybiBieSBkb2luZyEifQ.
 QKVJvVR80IMeoRzcLPWh6AIceQs-HkNlMey4swkHOX0
 ```
-Now it is a bit more precise.
 
 > But where is the JSON? This looks like random characters and not JSON.
 
 Yes, you are right; this is not a standard JSON at first sight. This is base64url encoded JSON. base64url is a way to convert a human-readable string into URL friendly string. So, what you saw above is a JSON itself, just a different representation.
 
 The three parts of JWT are
-- ** Header**: The Header is used to give the information to the parser about the token itself. The Header typically consists of the type of the token, which is JWT, and the signing algorithm being used. 
-- ** Payload**: The second part of the token is the Payload, which contains the actual information 
-- ** Signature**: Signature is used to verify the token was not changed along the way. This prevents tampering.
+- Header
+- Payload 
+- Signature 
+
+Having understood what JWT, can you do a bit of digging and fill the next section on Where and Why is JWT used. Once you find it, do send a pull request.
 
 > Where is JWT used?
 
-It is used in almost all web applications to authorize any request to the server. It is sent along-with API request. It is sent as a header with the API request. 
-
-`Authorization: Bearer <token>`
-
-The Signature is used to verify if the JWT was tampered with. Once the JWT is verified, the Payload can be decoded to get information about the request. 
-
 > Why is JWT used?
 
-- It helps communication to happen without authentication at every step by just verifying with JWT.
-- It is trustable as the JWT is digitally signed. 
 
 ## Activity: Decode JWT
 
@@ -59,8 +59,6 @@ Paste the base64url encoded string to form to get its plain text representation.
 <summary>What did you get? (click to expand)</summary>
 
 `{"alg":"HS256","typ":"JWT"}`
-
-It says that the token is a JWT and its signing algorithm. 
 
 </details>
 
@@ -77,13 +75,6 @@ Incredible, isn't it?
 
 Similarly, try doing the signature part. You would see random characters. That is the Signature of the message. 
 As you would have guessed by now, signed JWT is tamper-proof, but the information in it is still readable. 
-
-In a JWT verification system, the flow is
-1. Decode Header
-2. Get the signing algorithm
-3. Check if the Signature is valid, else send an error.
-4. If the Signature is valid, decode the Payload.
-
 
 Let us check the validity of the Signature. You can use any verifier of your choice, or even better if you make your program. If you do make your program, do send a pull request. <br>
 
@@ -127,7 +118,7 @@ Once done, this is how the JWT would look like
 
 <details>
 <summary>Does your JWT match above one? (click to expand)</summary>
-We sneakily changed the secret to test if you are actually following along. We added an exclamation at end to the secret. Use the following as secret to get the same JWT as above
+We sneakily changed the secret to test if you are actually following along. We added an exclamation at end to the secret. Use the following as the secret to get the same JWT as above
 
 `this is super secret info but you know it!`
 
@@ -155,6 +146,67 @@ Unsigned JWT will have the Header with
 `"alg": "none"`
 
 Can you take the first JWT shown above from the Introduction section and create an unsigned JWT of the same with a modified message? 
+
+## Activity: Create JWT on server
+
+Process
+1. Authenticate to see if request parameters matches the username and password on server
+2. Create a signed JWT and pass to response
+3. On subsequent requests, verify the JWT to provide access
+
+Go to `src` folder and open `server-js`. Install packages, create `.env` from `.env.example` and run the server.
+
+This example uses username and password stored directly as variable in file. Actual server would have it on a database. 
+
+To create the JWT, let us check code at `/getjwt`. <br>
+**Mini-Activity**
+- Presently, the API gives the signed JWT with username without checking if API request contains the right password. Can you modify the code to check password and then only give JWT?
+- Once done, verify that the user gets JWT only with right password, else error message.
+
+To verify the JWT, let us check code at `/verifyjwt`. <br>
+**Mini-Activity**
+- Can you extarct token from the Authorization header? Once done, pass it to `jwt.verify(token, process.env.TOKEN_SECRET)` to verify. 
+- If JWT is not valid, the `jwt.verify()` throws an error. Can you handle this exception to prevent server crashing?
+
+**Additional Activity**
+- `jwt.verify()` by default uses HS256. Modify the code try different signing method
+- The example token is not a secure one. Use a package like `crypto` to generate a secure and random key
+
+## Activity: Get and use JWT
+
+Process
+1. Authenticate yourself with username password or equivalent depending on the service
+2. Get JWT as response. Store this for subsequent requests
+3. Pass the JWT in Authorization header
+
+Go to `src` folder and open `server-js`. Install packages and run the server
+
+Use an API client like [Postman](https://www.postman.com/) to make API calls
+
+To get the JWT, authenticate yourself with username and password at `/getjwt`. <br>
+**Mini-Activity**
+- API should give error if username password is invalid
+- Check if jwt is signed and contains correct information at [jwt.io](https://jwt.io/)
+
+To verify the JWT, pass the JWT as authorization header to `/verifyjwt`. <br>
+**Mini-Activity**
+- API should give unauthorized error if jwt is invalid or tampered 
+- Are you able to get success response when passing the signed JWT?
+<details>
+<summary>Sample Request (click to expand)</summary>
+<img src ='./images/jwt-3.png'/>
+
+</details>
+
+## Understand how Signature works
+
+Signed JWTs are signed by cryptographic hash functions. Unline encryption that can be decrypted, a crypographic hash cannot be reversed(without sufficiently high time and compute resources beyond present day availability). JWTs can be signed using any of the crypographic functions available. The one we used here is HS256 that stands for HMAC using SHA-256. 
+Read more about them to get in-depth knowledge.
+
+![](./images/jwt-2.png)<br>
+Credits: JWT Handbook by Sebastián Peyrott
+
+
 
 ## Quiz: Recap of Learning
 
@@ -197,6 +249,8 @@ We believe that there can be no one-stop solution to learn it all. And, JWT is n
 
 - Encrypted JWT
 - Cryptographic Hash
+- HMAC
+- Claims in JWT
 - Base64 Encoding
 - Access Token and Refresh Token
 - Session Token

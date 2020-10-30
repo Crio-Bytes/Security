@@ -8,6 +8,7 @@ Who does not like a story while learning a technical concept? Let us try to get 
 JWTs are used primarily for authorization. Having prior knowledge of one or many of the following topics will give you a clearer context.
 - Any kind of authentication on a backend server
 - Use of protected APIs
+- Nodejs
 
 ## Introduction: What, Where and Why?
 
@@ -47,6 +48,8 @@ Having understood what JWT, can you do a bit of digging and fill the next sectio
 > Where is JWT used?
 
 > Why is JWT used?
+
+**OAuth 2.0 is the industry-standard protocol for authorization. It uses JWT under the hood for its implementation. Hence, JWT plays an important role in authorization systems.**
 
 
 ## Activity: Decode JWT

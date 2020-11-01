@@ -1,5 +1,5 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # Introduction
@@ -21,6 +21,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://ak-shaw-portfolio.netlify.app"><img src="https://avatars0.githubusercontent.com/u/51538194?v=4" width="100px;" alt=""/><br /><sub><b>Ayush Kumar Shaw</b></sub></a><br /><a href="https://github.com/Crio-Bytes/Security/commits?author=Ak-Shaw" title="Code">💻</a> <a href="https://github.com/Crio-Bytes/Security/commits?author=Ak-Shaw" title="Documentation">📖</a> <a href="#eventOrganizing-Ak-Shaw" title="Event Organizing">📋</a> <a href="#ideas-Ak-Shaw" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-Ak-Shaw" title="Maintenance">🚧</a> <a href="https://github.com/Crio-Bytes/Security/pulls?q=is%3Apr+reviewed-by%3AAk-Shaw" title="Reviewed Pull Requests">👀</a></td>
     <td align="center"><a href="https://crio.do/"><img src="https://avatars0.githubusercontent.com/u/51743602?v=4" width="100px;" alt=""/><br /><sub><b>Crio.Do</b></sub></a><br /><a href="#eventOrganizing-CrioDo" title="Event Organizing">📋</a></td>
     <td align="center"><a href="https://github.com/DesignrKnight"><img src="https://avatars0.githubusercontent.com/u/27865704?v=4" width="100px;" alt=""/><br /><sub><b>Abel Mathew</b></sub></a><br /><a href="https://github.com/Crio-Bytes/Security/commits?author=DesignrKnight" title="Code">💻</a> <a href="https://github.com/Crio-Bytes/Security/commits?author=DesignrKnight" title="Documentation">📖</a> <a href="#ideas-DesignrKnight" title="Ideas, Planning, & Feedback">🤔</a> <a href="#content-DesignrKnight" title="Content">🖋</a></td>
+    <td align="center"><a href="https://rishitha24.github.io/portfolio/extra.html"><img src="https://avatars2.githubusercontent.com/u/44165491?v=4" width="100px;" alt=""/><br /><sub><b>Rishitha</b></sub></a><br /><a href="https://github.com/Crio-Bytes/Security/commits?author=rishitha24" title="Code">💻</a> <a href="#content-rishitha24" title="Content">🖋</a> <a href="#ideas-rishitha24" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/Crio-Bytes/Security/commits?author=rishitha24" title="Documentation">📖</a></td>
   </tr>
 </table>
 

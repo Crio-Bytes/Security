@@ -1,5 +1,5 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # Introduction
@@ -24,6 +24,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://rishitha24.github.io/portfolio/extra.html"><img src="https://avatars2.githubusercontent.com/u/44165491?v=4" width="100px;" alt=""/><br /><sub><b>Rishitha</b></sub></a><br /><a href="https://github.com/Crio-Bytes/Security/commits?author=rishitha24" title="Code">💻</a> <a href="#content-rishitha24" title="Content">🖋</a> <a href="#ideas-rishitha24" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/Crio-Bytes/Security/commits?author=rishitha24" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/archithdwij"><img src="https://avatars1.githubusercontent.com/u/30730368?v=4" width="100px;" alt=""/><br /><sub><b>Archithdwij</b></sub></a><br /><a href="https://github.com/Crio-Bytes/Security/pulls?q=is%3Apr+reviewed-by%3Aarchithdwij" title="Reviewed Pull Requests">👀</a> <a href="#eventOrganizing-archithdwij" title="Event Organizing">📋</a></td>
     <td align="center"><a href="https://kevinpaulose05.github.io/"><img src="https://avatars3.githubusercontent.com/u/64629493?v=4" width="100px;" alt=""/><br /><sub><b>Kevin Paulose</b></sub></a><br /><a href="https://github.com/Crio-Bytes/Security/pulls?q=is%3Apr+reviewed-by%3AKevinpaulose05" title="Reviewed Pull Requests">👀</a> <a href="#eventOrganizing-Kevinpaulose05" title="Event Organizing">📋</a></td>
+    <td align="center"><a href="https://github.com/amoghrajesh"><img src="https://avatars2.githubusercontent.com/u/35884252?v=4" width="100px;" alt=""/><br /><sub><b>Amogh Rajesh Desai</b></sub></a><br /><a href="https://github.com/Crio-Bytes/Security/pulls?q=is%3Apr+reviewed-by%3Aamoghrajesh" title="Reviewed Pull Requests">👀</a> <a href="#eventOrganizing-amoghrajesh" title="Event Organizing">📋</a></td>
   </tr>
 </table>
 
